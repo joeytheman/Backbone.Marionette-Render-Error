@@ -25,6 +25,7 @@
 //= require_tree .//routers
 //= require_tree .
 Backbone.Marionette.Renderer.render = function(template, data){
+  console.log("Using custom renderer and the following parameters where passed in:\n", template,"\n", data)
   if (!JST[template]) throw "Template '" + template + "' not found!";
   return JST[template](data);
 }
