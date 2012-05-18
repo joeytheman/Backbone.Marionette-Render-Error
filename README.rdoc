@@ -1,4 +1,4 @@
-Backbone.Marrionette is attempting to render JST templates that were previously been rendered when calling render() once.
+Backbone.Marrionette is attempting to render JST templates that were previously been rendered when calling render() for the first time.
 
 Steps To Reproduce
 Get Rails App Working
