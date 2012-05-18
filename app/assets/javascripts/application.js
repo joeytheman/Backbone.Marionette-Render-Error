@@ -12,4 +12,19 @@
 //
 //= require jquery
 //= require jquery_ujs
+///= require underscore
+//= require backbone
+//= require backbone.marionette
+//
+//= require render_error
+//
+//= require_tree ../templates/
+//= require_tree .//models
+//= require_tree .//collections
+//= require_tree .//views
+//= require_tree .//routers
 //= require_tree .
+Backbone.Marionette.Renderer.render = function(template, data){
+  if (!JST[template]) throw "Template '" + template + "' not found!";
+  return JST[template](data);
+}

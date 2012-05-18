@@ -1,4 +1,8 @@
 RenderError::Application.routes.draw do
+  resources :planets
+  
+  root to: 'planets#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
